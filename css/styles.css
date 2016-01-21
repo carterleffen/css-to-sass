@@ -1,0 +1,640 @@
+/* --------------------------------------*/
+/* ---------- Global Layout Section -----*/
+/* --------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  display: flex;
+  margin: 0;
+  font-family: sans-serif;
+  color: #4a4a4a;
+  background: #fafafa;
+}
+.heading {
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 0;
+  padding-top: 38px;
+  margin-bottom: 15px;
+}
+.contact-heading {
+  display: block;
+  text-align: center;
+  font-size: .9em;
+  font-weight: 700;
+  padding: 0;
+}
+.logo p {
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+
+
+/* --------------------------------------*/
+/* ---------- Navigation Section --------*/
+/* --------------------------------------*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo {
+  font-size: .8em;
+  text-align: center;
+  padding: 5px;
+}
+.main-nav {
+  width: 100%;
+  margin-bottom: 35px;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.nav-link {
+  background: #fff;
+  text-align: center;
+  margin: 2.5px;
+}
+.nav-link a {
+  text-decoration: none;
+  color: #4a4a4a;
+  font-size: .8em;
+  font-weight: bold;
+  display: block;
+  padding: 12px;
+}
+.nav-link a:hover {
+  color: rgb(30, 105, 217);
+}
+
+
+
+/* --------------------------------------*/
+/* ---------- Greeting Section ----------*/
+/* --------------------------------------*/
+
+.greeting {
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  /*margin-bottom: 75px;*/
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.greeting-item {
+  padding: 0 15px;
+  text-align: center;
+  color: #7f7f7f;
+  line-height: 1.5em;
+}
+.greeting-item img {
+  width: 70%;
+  height: 70%;
+}
+
+
+
+/* --------------------------------------*/
+/* ---------- Content Section -----------*/
+/* --------------------------------------*/
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+.portfolio {
+  font-size: .85em;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+.content {
+  flex: 1 1 100%;
+  max-width: 350px;
+  /*height: 322px;*/
+  padding: 0;
+  margin-bottom: 15px;
+}
+.content img {
+  width: 100%;
+  padding: 0 14px;
+}
+.content .headline {
+  padding: 0;
+  margin-top: 20px;
+  font-size: 1.1em;
+}
+.content .headline {
+  font-weight: bold;
+}
+.content p {
+  text-align: center;
+  font-weight: lighter;
+  font-size: .95em;
+  line-height: 1.4em;
+  padding: 0 2.3em;
+  color: rgb(70, 70, 70);
+}
+
+
+
+/* --------------------------------------*/
+/* ---------- Contact Section -----------*/
+/* --------------------------------------*/
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 55px;
+  margin-bottom: 10px;
+}
+.c-info {
+  display: inline-block;
+  text-align: center;
+  padding: 0 20px;
+  padding-bottom: 7px;
+  margin: 0 0 15px 0;
+  font-size: 1em;
+}
+.c-info .content {
+  margin-left: 10px;
+}
+#contact-info .heading {
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.marketing-copy {
+  display: block;
+  line-height: 1.5em;
+  /*font-size: 1em;*/
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 12px;
+  padding-right: 10px;
+  padding-left: 10px;
+  color: rgb(139, 139, 139)
+}
+
+
+
+/* --------------------------------------*/
+/* ---------- Footer Section ------------*/
+/* --------------------------------------*/
+
+footer {
+  padding-top: 30px;
+}
+.main-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.main-footer > div {
+  margin: 0 10px;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+hr {
+  margin: 0 10px;
+  padding: 0;
+  margin-bottom: 23px;
+  background-color: rgb(233, 233, 233);
+  border-color: none;
+  height: 1px;
+}
+.main-footer > div > a {
+  text-decoration: none;
+  color: rgb(70, 70, 70)
+}
+#backtotop {
+  font-size: .8em;
+}
+.main-footer-large {
+  display: none;
+}
+
+
+
+/* --------------------------------------*/
+/* ---------- Display 768px -------------*/
+/* --------------------------------------*/
+
+
+/* --------------------------------------*/
+/* ---------- Navigation Section --------*/
+/* --------------------------------------*/
+
+@media all and (min-width: 768px) {
+  .logo {
+    margin-top: 30px;
+  }
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .nav-link {
+    background: #fafafa;
+    font-size: 1.1em;
+    margin: 0;
+    margin: 0 8px;
+  }
+
+
+
+  /* --------------------------------------*/
+  /* ---------- Greeting Section ----------*/
+  /* --------------------------------------*/
+
+  .greeting {
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+    max-width: none;
+  }
+  .greeting-item {
+    order: 1;
+    align-content: flex-start;
+    margin-top: 5px;
+    margin-left: 15px;
+  }
+  .greeting-item img {
+    width: 290px;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+  .greeting-item p {
+    order: -1;
+    font-size: 1.1em;
+    text-align: left;
+    /*margin: 0 0 0 15px;*/
+    line-height: 1.5em;
+    margin: 0;
+  }
+
+
+
+  /* --------------------------------------*/
+  /* ---------- Main Section --------------*/
+  /* --------------------------------------*/
+
+  .main {
+    background: #fff;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .portfolio {
+    width: 100%;
+    font-size: .8em;
+    text-align: center;
+  }
+  .content {
+    flex: 1 1 100%;
+    max-width: 380px;
+    height: 345px;
+    margin: 0 -8px;
+    margin-top: -3px;
+    margin-bottom: 37px;
+  }
+  .content img {
+    padding: 2px 14px;
+  }
+  .content .headline {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .content p {
+    text-align: center;
+    font-weight: lighter;
+    font-size: .95em;
+    line-height: 1.4em;
+    padding: 0 1.1em;
+    color: rgb(70, 70, 70);
+    padding-bottom: 15px;
+    margin: 10px 20px;
+  }
+
+
+
+  /* --------------------------------------*/
+  /* ---------- Contact Section -----------*/
+  /* --------------------------------------*/
+
+  #contact-info {
+    display: flex;
+    flex-direction: column;
+    /*margin-top: 5px;*/
+    margin-bottom: 33px;
+  }
+  #contact-info p {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  .c-info {
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 0 15px 0;
+    font-size: 1.3em;
+  }
+  .c-info .content {
+    margin-left: 10px;
+  }
+  #contact-info .heading {
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .marketing-copy {
+    margin-bottom: 20px;
+  }
+  .marketing-copy p {
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+    color: rgb(139, 139, 139);
+    line-height: 1.5em;
+    font-size: 1.3em;
+    padding: 0 100px 5px 100px;
+    margin: 25px 0 20px 0;
+  }
+
+
+  /* --------------------------------------*/
+  /* ---------- Footer Section ------------*/
+  /* --------------------------------------*/
+
+  footer {
+    padding-top: 20px;
+  }
+  .main-footer {
+    display: none;
+  }
+  .main-footer-large {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  .nav-footer {
+    display: flex;
+    align-content: flex-end;
+    margin: 0 15px;
+  }
+  .logo-footer {
+    font-size: 0.45em;
+    margin-left: 30px;
+    align-self: flex-start;
+  }
+  .nav-footer a {
+    font-size: .75em;
+    text-decoration: none;
+    font-weight: bold;
+    color: #4a4a4a;
+  }
+  .nav-footer a:hover {
+    color: rgb(30, 105, 217);
+  }
+  #backtotop {
+    font-size: .8em;
+  }
+}
+
+
+
+
+/* --------------------------------------*/
+/* ---------- Display 1024px ------------*/
+/* --------------------------------------*/
+
+@media all and (min-width: 1024px) {
+  .logo, .logo p {
+    padding: 0;
+  }
+  body {
+    background: #fafafa;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: auto;
+  }
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 45px 45px 0 45px;
+    margin-bottom: 0;
+    /*padding: 45px;*/
+    /*margin-bottom: 20px;*/
+  }
+
+  .nav {
+    margin-bottom: 0;
+  }
+  .logo {
+    padding-left: 10px;
+    padding-top: 10px;
+    align-self: flex-start;
+    margin: 0;
+    font-size: .8em;
+    font-weight: bold;
+  }
+  .nav-link {
+    background: #fafafa;
+    font-size: 1.1em;
+    padding-top: 5px;
+  }
+
+
+
+  /* --------------------------------------*/
+  /* ---------- Greeting Section ----------*/
+  /* --------------------------------------*/
+
+  .greeting {
+    flex-direction: row-reverse;
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .greeting-item {
+    order: 1;
+    align-content: flex-start;
+    margin-left: 40px;
+  }
+  .greeting-item img {
+    width: 370px;
+    margin-right: 45px;
+    /*padding-top: 8px;*/
+  }
+  .greeting-item p {
+    order: -1;
+    font-size: 1.2em;
+    text-align: left;
+    /*margin: 0 0 0 15px;*/
+    line-height: 1.5em;
+    margin: 0;
+    padding-top: 8px;
+  }
+
+
+
+  /* --------------------------------------*/
+  /* ---------- Main Section --------------*/
+  /* --------------------------------------*/
+
+  .main {
+    background: #fff;
+    padding-top: 43px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 960px;
+    margin: auto;
+  }
+  .portfolio {
+    width: 100%;
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 8px;
+  }
+  .content {
+    flex: 1 1 33%;
+    max-width: 320px;
+    height: 345px;
+    margin: 0 -8px;
+    margin-top: -3px;
+    margin-bottom: 8px;
+  }
+  .content img {
+    padding: 2px 14px;
+  }
+  .content .headline {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .content p {
+    text-align: center;
+    font-weight: lighter;
+    font-size: .95em;
+    line-height: 1.4em;
+    padding: 0 1em;
+    color: rgb(70, 70, 70);
+    padding-top: 5px;
+  }
+
+
+
+  /* --------------------------------------*/
+  /* ---------- Contact Section -----------*/
+  /* --------------------------------------*/
+
+  #contact-info {
+    display: flex;
+    flex-direction: column;
+    /*margin-top: 5px;*/
+    margin-bottom: 33px;
+  }
+  #contact-info p {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  .c-info {
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 0 15px 0;
+    font-size: 1.3em;
+  }
+  .c-info .content {
+    margin-left: 10px;
+  }
+  #contact-info .heading {
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .marketing-copy {
+    margin-bottom: 20px;
+  }
+  .marketing-copy p {
+    display: block;
+    line-height: 1.5em;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    color: rgb(139, 139, 139);
+    padding: 0 220px;
+    margin-bottom: 20px
+  }
+
+
+
+  /* --------------------------------------*/
+  /* ---------- Footer Section ------------*/
+  /* --------------------------------------*/
+
+  footer {
+    padding-top: 20px;
+  }
+  .main-footer {
+    display: none;
+  }
+  .main-footer-large {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+  .nav-footer {
+    display: flex;
+    align-content: flex-end;
+  }
+  .logo-footer {
+    align-self: flex-start;
+    font-size: 0.45em;
+    margin-left: 60px;
+  }
+  .nav-footer {
+    margin: 0 20px;
+  }
+  .nav-footer a {
+    font-size: .75em;
+    text-decoration: none;
+    font-weight: bold;
+    color: #4a4a4a;
+  }
+  #backtotop {
+    font-size: .8em;
+  }
+}
