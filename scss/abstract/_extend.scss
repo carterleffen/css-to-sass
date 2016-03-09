@@ -1,0 +1,15 @@
+%box-sizing {
+  box-sizing: border-box;
+}
+
+%box-sizing-inherit {
+  box-sizing: inherit;
+}
+
+%body {
+  display: flex;
+  margin: 0;
+  font-family: $main-font;
+  color: $content-text-color;
+  background: $content-background;
+}

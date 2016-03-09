@@ -1,0 +1,91 @@
+/* --------------------------------------*/
+/* ---------- Content Section -----------*/
+/* --------------------------------------*/
+.main {
+  @include wider-than(small) {
+    @include flexcolumn;
+    align-items: center;
+    background: $content-main-background;
+    padding: 40px 0 35px;
+  }
+  @include wider-than(medium) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0 0;
+    margin-bottom: 5px;
+  }
+  @include wider-than(large) {
+    max-width: 960px;
+    padding: 43px 0 0;
+    margin: auto auto 5px;
+  }
+}
+.portfolio {
+  @include wider-than(small) {
+    font-size: 0.85em;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: $heading;
+  }
+  @include wider-than(medium) {
+    width: 100%;
+    font-size: $font-small;
+  }
+  @include wider-than(large) {
+    font-size: 1em;
+    padding-bottom: 8px;
+  }
+}
+.content {
+  @include wider-than(small) {
+    flex: 1 1 100%;
+    max-width: 350px;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  @include wider-than(medium) {
+    max-width: 380px;
+    height: 345px;
+    margin: -3px -8px 37px;
+  }
+  @include wider-than(large) {
+    flex: 1 1 33%;
+    max-width: 320px;
+    margin: -3px -8px 8px;
+  }
+  .headline {
+    @include wider-than(small) {
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+  }
+  img {
+    @include wider-than(small) {
+      width: 100%;
+      padding: 0 14px;
+    }
+    @include wider-than(medium) {
+      padding: 2px 14px;
+    }
+  }
+  p {
+    @include wider-than(small) {
+      text-align: center;
+      font-weight: lighter;
+      font-size: $font-medium;
+      line-height: 1.4em;
+      padding: 0 2.3em;
+      color: $content-text-color;
+    }
+    @include wider-than(medium) {
+      padding: 0 1.1em 15px;
+      margin: 10px 20px;
+    }
+    @include wider-than(large) {
+      padding: 5px 1em 0;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.logo p {
+  @include wider-than(small) {
+    text-align: center;
+    font-size: $font-logo;
+    font-weight: bold;
+    color: $logo-color;
+    padding: 20px 0 25px 0;
+    margin: 0;
+
+  }
+  @include wider-than(medium) {
+    padding: 50px 0 25px 0;
+  }
+  @include wider-than(large) {
+    padding: 30px 0 0 0;
+  }
+}

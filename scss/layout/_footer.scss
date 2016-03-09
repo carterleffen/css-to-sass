@@ -1,0 +1,89 @@
+footer {
+  @include wider-than(small) {
+    padding-top: 60px;
+  }
+  @include wider-than(medium) {
+    padding-top: 40px;
+  }
+}
+.main-footer {
+  @include wider-than(small) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  @include wider-than(medium) {
+    display: none;
+  }
+  > div {
+    @include wider-than(small) {
+      margin: 0 10px;
+      font-size: $font-small;
+      font-weight: 700;
+      color: $footer-text;
+    }
+  }
+  > div > a {
+    @include wider-than(small) {
+      text-decoration: none;
+      color: $navlink-color;
+    }
+  }
+}
+.logo-footer {
+  @include wider-than(small) {
+    color: $navlink-color;
+  }
+  @include wider-than(medium) {
+    font-size: 0.45em;
+    margin-left: 30px;
+    align-self: flex-start;
+  }
+  @include wider-than(large) {
+    margin-left: 60px;
+  }
+}
+#backtotop {
+  @include wider-than(small) {
+    font-size: $font-small;
+  }
+}
+.main-footer-large {
+  @include wider-than(small) {
+    display: none;
+  }
+  @include wider-than(medium) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 10px;
+  }
+  @include wider-than(large) {
+    margin-right: 20px;
+  }
+}
+.nav-footer {
+  @include wider-than(medium) {
+    display: flex;
+    align-content: flex-end;
+    margin: 0 15px;
+  }
+  @include wider-than(large) {
+    margin: 0 20px;
+  }
+  a {
+    @include wider-than(medium) {
+      font-size: $font-small;
+      text-decoration: none;
+      font-weight: bold;
+      color: $navlink-color;
+    }
+  }
+  a:hover {
+    @include wider-than(medium) {
+      color: $navlink-hover;
+    }
+  }
+}

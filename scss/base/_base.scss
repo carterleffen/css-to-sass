@@ -1,0 +1,11 @@
+html {
+  @extend %box-sizing;
+}
+
+*, *:before, *:after {
+  @extend %box-sizing-inherit;
+}
+
+body {
+  @extend %body;
+}

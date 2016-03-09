@@ -1,0 +1,69 @@
+@import "components/logo";
+
+.container {
+  @include wider-than(small) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include wider-than(large) {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+
+.main-nav {
+  @include wider-than(small) {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  @include wider-than(large) {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px 0 55px;
+    margin: 0;
+  }
+}
+
+.nav {
+  @include wider-than(small) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  @include wider-than(medium) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.nav-link {
+  @include wider-than(small) {
+    background: $button-color;
+    text-align: center;
+    margin: 2.5px;
+  }
+  @include wider-than(medium) {
+    font-size: $font-large;
+    margin: 0 8px;
+  }
+  @include wider-than(large) {
+    margin: 20px 4px;
+  }
+  a {
+    @include wider-than(small) {
+      text-decoration: none;
+      color: $button-text;
+      font-size: $font-small;
+      font-weight: bold;
+      display: block;
+      padding: 12px;
+    }
+  }
+  a:hover {
+    @include wider-than(small) {
+      color: $button-text-hover;
+      background: $lightblue;
+    }
+  }
+}

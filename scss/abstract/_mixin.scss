@@ -1,0 +1,23 @@
+// Breakpoint Mixin
+@mixin wider-than($point) {
+    @if $point == large {
+        @media screen and (min-width: 1024px) { @content; }
+    }
+
+    @else if $point == medium {
+        @media screen and (min-width: 768px) { @content; }
+    }
+
+    @else if $point == small {
+        @media screen and (min-width: 320px) { @content; }
+    }
+
+    @else {
+        @media screen and (min-width: $point) { @content; }
+    }
+}
+
+@mixin flexcolumn {
+  display: flex;
+  flex-direction: column;
+}
