@@ -1,11 +1,11 @@
 @import "components/logo";
 
 .container {
-  @include wider-than(small) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  @extend %flexColumn;
+  justify-content: center;
+}
+
+.container {
   @include wider-than(large) {
     max-width: 1024px;
     margin: auto;
@@ -26,11 +26,10 @@
 }
 
 .nav {
-  @include wider-than(small) {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
-  }
+  @extend %flexColumn;
+  margin-bottom: 5px;
+}
+.nav {
   @include wider-than(medium) {
     flex-direction: row;
     justify-content: center;

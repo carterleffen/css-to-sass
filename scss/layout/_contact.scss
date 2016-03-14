@@ -1,25 +1,21 @@
 .contact-info {
-  @include wider-than(small) {
-    display: flex;
-    flex-direction: column;
+    @extend %flexColumn;
     padding-top: 20px;
     margin-bottom: 10px;
   }
-  @include wider-than(medium) {
-    display: flex;
-    flex-direction: column;
+  .contanct-info {
+    @include wider-than(medium) {
     margin-bottom: 33px;
-  }
+    }
   @include wider-than(large) {
-    display: flex;
-    flex-direction: column;
     padding-top: 20px;
   }
-  .heading {
-    @include wider-than(medium) {
-      padding-top: 20px;
-      margin-top: 20px;
-    }
+}
+
+.heading {
+  @include wider-than(medium) {
+    padding-top: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -33,14 +29,14 @@
     color: $contact-color;
   }
   @include wider-than(medium) {
-    text-align: center;
     padding: 0 20px;
     font-size: $font-xlarge;
   }
-  .content {
-    @include wider-than(small) {
-        margin-left: 10px;
-    }
+}
+
+.content {
+  @include wider-than(small) {
+      margin-left: 10px;
   }
 }
 

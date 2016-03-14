@@ -1,11 +1,10 @@
 .greeting {
-   @include wider-than(small) {
-    max-width: 380px;
-    display: flex;
-    flex-direction: column;
+    @extend %flexColumn;
+    max-width: 320px;
     margin: auto;
     padding: 5px 0 20px 0;
   }
+.greeting {
   @include wider-than(medium) {
     flex-direction: row-reverse;
     margin-bottom: 30px;

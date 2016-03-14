@@ -13,3 +13,8 @@
   color: $content-text-color;
   background: $content-background;
 }
+
+%flexColumn {
+  display: flex;
+  flex-direction: column;
+}

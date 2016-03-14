@@ -2,12 +2,13 @@
 /* ---------- Content Section -----------*/
 /* --------------------------------------*/
 .main {
-  @include wider-than(small) {
-    @include flexcolumn;
-    align-items: center;
-    background: $content-main-background;
-    padding: 40px 0 35px;
-  }
+  @extend %flexColumn;
+  align-items: center;
+  background: $content-main-background;
+  padding: 40px 0 35px;
+}
+
+.main {
   @include wider-than(medium) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -21,6 +22,7 @@
     margin: auto auto 5px;
   }
 }
+
 .portfolio {
   @include wider-than(small) {
     font-size: 0.85em;
